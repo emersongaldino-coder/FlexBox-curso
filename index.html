@@ -4,139 +4,151 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-"
+      content="width=device-width, initial-scale=1.0, shrink-" 
     />
+    <!--inicial com modo responsivo-->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <title>Página Flex-Box</title>
+    <!--chamado o css para ajuste do layout-->
+    <title>Ponto de Parada - variedade e qualidade</title>
+    <!--nome exibido na aba da página-->
   </head>
   <body>
     <div class="superinfo-bg">
       <div class="superinfo">
         <p>Seg / Sex 09:00 as 22:00</p>
         <a href="+55 14 9999-9999"> +55 14 9999-9999</a>
-        <p>Avenida quase ali, 1515, interior-sp</p>
+        <!--link clicavel para o telefone-->
+        <p>Avenida dos Pinheiros, 1415, Jau-Interior-SP</p>
       </div>
     </div>
     <header class="menu-bg">
       <div class="menu">
         <div class="menu-logo">
-          <a href="#">FLEX BOX</a>
+          <a href="#">Ponto de Parada</a>
         </div>
         <nav class="menu-nav">
           <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#produtos">Produtos</a></li>
-            <li><a href="#preco">Preço</a></li>
+            <li><a href="#sobre">Quem Somos</a></li>
+            <!--definindo menu de navegação e usando # para linkar ao setor escolhido-->
+            <li><a href="#produtos">Favoritos</a></li>
+            <li><a href="#preco">Produtos</a></li>
             <li><a href="#qualidade">Qualidade</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <h1 class="introducao">Novos Produtos disponiveis no mercado</h1>
+    <h1 class="introducao">
+      <!--titulo da página-->
+      Ponto de Parada, melhor compra no seu tempo livre
+    </h1>
 
     <section class="sobre" id="sobre">
       <div class="sobre-info">
-        <h1>Sobre</h1>
+        <h1>Quem Somos</h1>
+        <!--h1 para destaque de letra, abaixo p para separar em dois blocos os textos-->
         <p>
-          Temos como objetivo estruturar esse codigo baseado na ideia de uma
-          loja que vende artigos como cervejas e bebidas em geral
+          Tudo começou em meio a trabalhos da faculdade, cervejas entre amigos e
+          aquela vontade de fazer algo diferente. Dois estudantes apaixonados
+          por cerveja artesanal decidiram juntar seus gostos e criar a Ponto de
+          Parada — um e-commerce feito pra quem curte praticidade, bons brindes
+          e presentes que salvam na correria.
         </p>
         <p>
-          Temos como objetivo estruturar esse codigo baseado na ideia de uma
-          loja que vende artigos como cervejas e bebidas em geral
+          Somos um comércio online de bebidas alcoólicas e kits de
+          cervejas, canecas entre outros, criado para facilitar a vida de quem busca
+          qualidade, rapidez e aquele presente certeiro de última hora. Seja
+          para celebrar, presentear ou simplesmente aproveitar o fim de semana,
+          somos o seu ponto de parada ideal. Mais do que vender produtos,
+          queremos entregar experiências. Cada kit, cada garrafa, cada detalhe é
+          pensado para surpreender e conectar pessoas. Afinal, acreditamos que
+          bons brindes começam com boas histórias — e a nossa está só começando.
         </p>
       </div>
       <div class="sobre-img">
-        <img src="img/sobre1.jpg" alt="Sobre 1" />
+        <img src="img/quem-somos.jpg" alt="Quem Somos 1" />
       </div>
-      <div class="sobre-img">
-        <img src="img/sobre 3.jpg" alt="Sobre 2" />
-      </div>
+      <!--imagem associada ao quem somos-->
     </section>
 
     <section class="produtos" id="produtos">
+      <!--sub dividindo em categorias, chamando o ID produto-->
       <h1>Produtos</h1>
       <div class="produtos-container">
-        <div class="produtos-item canecas">
-          <h2>Cervejas locais</h2>
-          <img src="img/sobre4.jpg" alt="Produtos 1" />
+        <!--agrupando os items para chamada em display flex no css-->
+
+        <div class="produtos-item kit1">
+          <h2>Kit Especial Personalizado 1</h2>
+          <img src="img/kit-especial1.jpg" alt="Produtos 1" />
         </div>
-        <div class="produtos-item canecas">
-          <h2>Cervejas importadas</h2>
-          <img src="img/sobre4.jpg" alt="Produtos 2" />
+
+        <div class="produtos-item kit2">
+          <h2>Kit Especial Personalizado 2</h2>
+          <img src="img/kit-especial2.jpg" alt="Produtos 2" />
         </div>
-        <div class="produtos-item canecas">
-          <h2>Cervejas nacionais</h2>
-          <img src="img/sobre4.jpg" alt="Produtos 3" />
-        </div>
-      </div>
+        
+    </section>
+
     </section>
 
     <section class="preco" id="preco">
+      <!--mesma forma do anterior, definindo class para o css na chamada, agrupando
+      imagem e usando lista para elencar as qualidades do produto, o href apenas para
+      retornar o botão comprar ao topo da pagina, juntando o #-->
       <div class="preco-item">
-        <h2>Cerveja IPA</h2>
-        <span><sup>R$</sup>38.90</span>
+        <img src="img/produto-1-cerveja-ipa.jpg" alt="produtos-ipa">
+        <h2>Cerveja IPA Lagunitas</h2>
+        <span><sup>R$</sup>17.90</span>
         <ul>
-          <li>Sabor Encorpado</li>
-          <li>Amargor Médio</li>
+          <li>Levemente Encorpado</li>
+          <li>Amargor Médio/Alto</li>
+          <li>350 ml por garrafa</li>
+        </ul>
+        <a href="#">Comprar</a>
+      </div>
+
+      <div class="preco-item">
+        <img src="img/produtos-2-cerveja-stout.jpg" alt="produtos-stout">
+        <h2>Cerveja Stout Black CAB</h2>
+        <span><sup>R$</sup>26.90</span>
+        <ul>
+          <li>Bem Encorpado</li>
+          <li>Dulcor suave</li>
           <li>600 ml por garrafa</li>
         </ul>
         <a href="#">Comprar</a>
       </div>
 
       <div class="preco-item">
-        <h2>Cerveja IPA</h2>
-        <span><sup>R$</sup>38.90</span>
+        <img src="img/caneca-chop.jpg" alt="caneca-chop">
+        <h2>Canecas Personalizadas 500ml</h2>
+        <span><sup>R$</sup>15.90</span>
         <ul>
-          <li>Sabor Encorpado</li>
-          <li>Amargor Médio</li>
-          <li>600 ml por garrafa</li>
-        </ul>
-        <a href="#">Comprar</a>
-      </div>
-
-      <div class="preco-item">
-        <h2>Cerveja IPA</h2>
-        <span><sup>R$</sup>38.90</span>
-        <ul>
-          <li>Sabor Encorpado</li>
-          <li>Amargor Médio</li>
-          <li>600 ml por garrafa</li>
+          <li>Feita em vidro</li>
+          <li>Acabamento diferenciado</li>
+          <li>Gravação de Frases</li>
         </ul>
         <a href="#">Comprar</a>
       </div>
     </section>
 
     <section class="qualidade" id="qualidade">
+      <!--mesmo procedimento, associando classe para ser chamada pelo CSS e marcando
+      o h2 como sub titulo do proximo P, com destaque menor que o h1-->
       <div class="qualidade-item">
-        <h2>Caracteristicas Gerais</h2>
-        <p>aqui será um breve texto para informações gerais</p>
+        <h2>Kits Especiais</h2>
+        <p>Todos os nossos kits acompanham embalagem personalizada com cartão para você deixar 
+          aquela mensagem especial!
+        </p>
       </div>
 
       <div class="qualidade-item">
-        <h2>Caracteristicas Gerais2</h2>
-        <p>aqui será um breve texto para informações gerais</p>
-      </div>
-      <div class="qualidade-item">
-        <h2>Caracteristicas Gerais3</h2>
-        <p>aqui será um breve texto para informações gerais</p>
+        <h2>Kits Especiais, produtos selecionados</h2>
+        <p>Podem ser montados com a solicitação do cliente por determinados produtos ou 
+          modelos favoritos já selecionados por nossa equipe!
+        </p>
       </div>
 
-      <div class="qualidade-item">
-        <h2>Caracteristicas Gerais4</h2>
-        <p>aqui será um breve texto para informações gerais</p>
-      </div>
-
-      <div class="qualidade-item">
-        <h2>Caracteristicas Gerais5</h2>
-        <p>aqui será um breve texto para informações gerais</p>
-      </div>
-
-      <div class="qualidade-item">
-        <h2>Caracteristicas Gerais6</h2>
-        <p>aqui será um breve texto para informações gerais</p>
-      </div>
     </section>
 
     <section class="novidades" id="novidades">
@@ -145,13 +157,16 @@
         <p>Informe seu e-mail e fique por dentro de todas as ofertas</p>
       </div>
       <form class="novidades-form">
+        <!--associando a class para o CSS, inserindo um botão simples do tipo submit-->
         <input type="text" placeholder="seu e-mail" />
         <button type="submit">Assinar</button>
       </form>
     </section>
 
     <footer class="footer">
-      <p>Criado modelo de teste, aprendizado</p>
+      <!--definindo class para o rodapé da página-->
+      <h2>Ponto de Parada</h2>
+      <p>Sua parada favorita começa com um brinde</p>
     </footer>
   </body>
 </html>
